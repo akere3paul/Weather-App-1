@@ -1,0 +1,85 @@
+@media screen and (max-width:480px) {
+    .weatherapp{
+        /*background-color: #efe9f4/*rgb(238,237,243);*/
+        display: flex;
+        padding:10px 0px;
+        flex-direction: column;
+    }
+    .Weatherapp_search{
+        width: 300px;
+        height: 45px;
+    }
+    .Weatherapp_search input[type="text"]{
+        height: 39px;
+        width: 280px;
+        
+    }
+
+    /***************************/
+    .Weatherapp_NameAndIcon{
+        display: flex;
+        padding:0px;
+        flex-direction: column;
+    }
+
+    .Weatherapp_Name{
+        width: 100%;
+        height: 100px;
+        display: flex;
+        flex-direction: column;
+        
+
+    }
+    .Weatherapp_Name_Country{
+        display: flex;
+        align-content: left;
+        justify-content: initial;
+        width: 100px;
+        font-size: 18px;
+        height: 25px;
+        color:white;
+        background-color: #607ff2;
+        
+    }
+    .Weatherapp_Name_City{
+        font-size: 30px;
+        height: 40px;
+    }
+    .Weatherapp_Icon{
+        box-shadow: none;
+        width: 100%;
+        height: 150px;
+        display: flex;
+        align-items: center;
+        justify-content: flex-end;
+               
+    }
+    .Weatherapp_TempHumidityPrassureAndWind{
+        flex-direction: column;
+    }
+    .weatherapp_Temp_container{
+        position: relative;
+        top:-140px;
+        left: -20px;
+    }
+    .Weatherapp_Temp{
+        font-size: 60px;
+    }
+    .Weatherapp_Conditon{
+        font-size: 20px;
+    }
+
+    .Weatherapp_HumidityPrassureAndWind{
+        width: 100%;
+        height: 50px;
+        position: relative;
+        left: -20px;
+        top:-50px;
+    }
+    .Weatherapp_Humidity_Container,
+.Weatherapp_Prassure_Container,
+.Weatherapp_Wind_Container{
+    padding:0px 10px;
+}
+
+}

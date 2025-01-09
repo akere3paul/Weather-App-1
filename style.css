@@ -1,0 +1,268 @@
+
+*{
+    padding:0;
+    margin:0;
+}
+body{
+    background-color: #efe9f4;
+    
+}
+.weatherapp{
+    
+    height: 700px;
+    display: flex;
+    flex-direction: column;
+    
+}
+
+/*******Weatherapp_search****/
+.Weatherapp_search_Container{
+    height: 70px;
+    width: 100%;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.Weatherapp_search{
+    width: 400px;
+    height: 50px;
+    
+    padding:0px 20px;
+    border-radius: 45px;
+    display: flex;
+    justify-content:space-between;
+    align-items: center;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(0,0,0,0.05);
+    color:#999;
+    border:1px solid transparent;
+}
+.Weatherapp_search input[type="text"]{
+    height: 39px;
+    width: 350px;
+    padding:0px 5px;
+    background-color: transparent;
+    border:none;
+    outline:none;
+    font-size: 18px;
+    color:#999;
+}
+.Weatherapp_search input[type="text"]::placeholder{
+    
+}
+.Weatherapp_search i{
+    font-size: 20px;
+}
+/***hover effect and focus effect*/
+.Weatherapp_search:focus-within{
+    color:#789dc9;
+    border-color:#5c80bc;
+    
+}
+.Weatherapp_search input[type="text"]:focus-within{
+    color:#05204a;
+
+}
+
+
+
+/*****lightDarkMode_Container*************/
+#lightDarkMode_Container{
+    position: absolute;
+    right:0;
+    top:0;
+    padding:5px;
+    display: flex;
+    align-items: center;
+}
+#DarkLightMode{
+    -webkit-appearance: none;
+    width: 30px;
+    height: 15px;
+    background-color: transparent;
+    border-radius: 15px;
+    position: relative;
+    display: flex;
+    align-items: center;
+    padding:0px 2px;
+    background-color: #21274d;
+}
+#DarkLightMode:checked{
+    background-color: white;
+}
+#DarkLightMode::before{
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    content:"";
+    background-color: white;
+    border-radius: 12px;
+    transition:1.5s;
+    border:none;
+}
+#DarkLightMode:checked::before{
+    height: 12px;
+    width: 12px;
+    position: absolute;
+    content:"";
+    background-color: #21274d;
+    border-radius: 12px;
+    transform: translateX(15px);
+    transition:1.5s;
+}
+/***********************************************/
+.Weatherapp_NameAndIcon{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 50px;
+    
+}
+.Weatherapp_Name{
+    
+    width: 200px;
+    height: 200px;
+}
+.Weatherapp_Name_Country{
+    width: 200px;
+    height: 35px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(0,0,0,0.05);
+    display: flex;
+    align-items: center;
+    padding:0px 20px;
+    border-radius: 0 50px 50px 0;
+    color:#607ff2;
+    font-size: 25px ;
+}
+.Weatherapp_Name_City{
+    width: 200px;
+    height: 80px;
+    text-shadow: -10px -10px 15px rgba(0,0,0,0.1),
+    10px 10px 15px rgba(0,0,0,0.1);
+    padding:0px 20px;
+    font-size: 45px;
+    font-weight:900;
+    display: flex;
+    align-items: center;
+    color:#ea4335;
+}
+
+/***********icon ************/
+.Weatherapp_Icon{
+    width: 230px;
+    height: 230px;
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    border-radius: 230px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(0,0,0,0.05);
+    
+}
+/**********************/
+.Weatherapp_TempHumidityPrassureAndWind{
+    display: flex;
+    justify-content: space-between;
+    align-content: center;
+    padding:0px 50px;
+    position: relative;
+    top:-30px;
+    
+    
+}
+.weatherapp_Temp_container{
+    display:flex;
+    flex-direction: column;
+}
+.Weatherapp_Temp{
+    font-size: 130px;
+    font-weight: 900;
+    color:#6e0d25;
+}
+.Weatherapp_Conditon{
+    font-size: 30px;
+    color:#8894a2;
+    
+}
+
+/*********************************/
+.Weatherapp_HumidityPrassureAndWind{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+.Weatherapp_Humidity_Container,
+.Weatherapp_Prassure_Container,
+.Weatherapp_Wind_Container{
+    width: 120px;
+    font-size: 20px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.Weatherapp_Humidity_Percentage,
+.Weatherapp_Prassure_Percentage,
+.Weatherapp_Wind_Percentage{
+    font-weight: bold;
+}
+.Weatherapp_Humidity_Container{
+    color:#4285f4;
+}
+.Weatherapp_Prassure_Container{
+    color:#34a853;
+}
+.Weatherapp_Wind_Container{
+    color:#291d89;
+}
+
+
+
+/********************************************/
+.WeatherLastSeen{
+    width: 200px;
+    height: 150px;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.5),
+    10px 10px 15px rgba(0,0,0,0.05);
+    border-radius: 20px;
+    margin: 10px;
+    display: flex;
+    flex-direction: column;
+   /* position: relative;
+    top:-20px;*/
+}
+.WeatherLastSeen_tempandIcon{
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    color:black;
+    margin-top: -10px;
+}
+.WeatherLastSeen_WeatherTemp{
+    font-size: 30px;
+    font-weight: 900;
+}
+.WeatherLastSeen_CityName{
+    font-size: 20px;
+    color:#2b3d5b;
+    font-weight: 900;
+    padding:20px;
+}
+.WeatherLastSeenList{
+    display: inline;
+    flex-wrap: wrap;
+    
+}
+
+/********/
+.Recentsearch{
+    width: 90%;
+    box-shadow: -10px -10px 15px rgba(255,255,255,0.1),
+    10px 10px 15px rgba(0,0,0,0.05);
+    font-size: 20px;
+    padding: 5px 50px;
+    font-weight: 900;
+}

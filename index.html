@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <title>Weather App</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="MobileStyle.css">
+    <link rel="stylesheet" href="colorstyle.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css" integrity="sha512-Fo3rlrZj/k7ujTnHg4CGR2D7kSs0v4LLanw2qksYuRlEzO+tcaEPQogQ0KaoGN26/zrn20ImR1DfuLWnOo7aBA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+    <div class="weatherapp">
+        <div class="Weatherapp_search_Container">
+            <div class="Weatherapp_search" id="Weatherapp_search">
+                <input type="text" placeholder="Enter City Name ..." id="Weatherapp_search_Input">
+                <i class="fa-solid fa-search"></i>
+            </div>
+        </div>
+        <div id="lightDarkMode_Container">
+            <input type="checkbox" id="DarkLightMode">
+            <input type="color" id="choiceColor"> 
+        </div>
+
+
+
+        <!---->
+        <div class="Weatherapp_NameAndIcon">
+            <div class="Weatherapp_Name">
+                <div class="Weatherapp_Name_Country" id="Weatherapp_Name_Country">Nigeria</div>
+                <div class="Weatherapp_Name_City" id="Weatherapp_Name_City" >Port Harcourt</div>
+
+            </div>
+            <div class="Weatherapp_Icon" id="Weatherapp_Icon">
+                <img src="icon.png" height="200" width="200px"  id="Weatherapp_Icon_Images">
+            </div>
+        </div>
+
+        <!---->
+        <div class="Weatherapp_TempHumidityPrassureAndWind">
+            <div class="weatherapp_Temp_container">
+                <div class="Weatherapp_Temp" id="Weatherapp_Temp">25<sup>o</sup>C</div>
+                <div class="Weatherapp_Conditon" id="Weatherapp_Conditon">Smoke</div>
+            </div>
+
+            <div class="Weatherapp_HumidityPrassureAndWind">
+                <div class="Weatherapp_Humidity_Container">
+                    <div class="Weatherapp_Humidity_Title" >Humidity</div>
+                    <div class="Weatherapp_Humidity_Percentage" id="Weatherapp_Humidity_Percentage">29%</div>
+                </div>
+                <div class="Weatherapp_Prassure_Container">
+                    <div class="Weatherapp_Prassure_Title">Pressure</div>
+                    <div class="Weatherapp_Prassure_Percentage" id="Weatherapp_Prassure_Percentage">1000hPa</div>
+                </div>
+                <div class="Weatherapp_Wind_Container">
+                    <div class="Weatherapp_Wind_Title">Wind</div>
+                    <div class="Weatherapp_Wind_Percentage" id="Weatherapp_Wind_Percentage">23Kmhr</div>
+                </div>
+            </div>
+        </div>
+
+        <!---->
+        <p style="text-align: right;margin-right: 80px;">Designed by Akere G. Paul</p>
+        <p class="Recentsearch">Recent Search</p>
+        <div class="WeatherLastSeenList" onclick="realsss()" id="WeatherLastSeenList">
+
+            <div class="WeatherLastSeen" id="WeatherLastSeenID">
+                <div class="WeatherLastSeen_CityName" id="WeatherLastSeen_CityName">Port Harcourt</div>
+                <div class="WeatherLastSeen_tempandIcon">
+                    <div class="WeatherLastSeen_WeatherTemp" id="WeatherLastSeen_WeatherTemp">25<sup>o</sup>C</div>
+                    <div class="WeatherLastSeen_icon">
+                        <img src="icon.png" width="80px" height="80px" id="WeatherLastSeen_icon_Images">
+                    </div>
+                </div>
+            </div>
+    </div>
+    </div>
+
+
+    <script src="javascript.js"></script>
+</body>
+</html>
